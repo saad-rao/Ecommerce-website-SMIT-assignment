@@ -47,7 +47,7 @@ async function renderProducts() {
             <img src="${product.image}" alt="${product.title}" class="product-image">
             <h3 class="product-title">${product.title}</h3>
             <p class="product-price">$${product.price.toFixed(2)}</p>
-            <button class="add-to-cart" onclick="addToCart(${JSON.stringify(product).replace(/"/g, '&quot;')})">
+            <button class="add-to-cart" onclick=" swal.fire('Product added to cart!'); addToCart(${JSON.stringify(product).replace(/"/g, '&quot;')})">
                 Add to Cart
             </button>
         </div>
