@@ -15,6 +15,13 @@ function toggleCart() {
     }
 }
 
+function toggleCart() {
+    const cartSidebar = document.getElementById('cartSidebar');
+    const overlay = document.getElementById('overlay');
+    cartSidebar.classList.toggle('open');
+    overlay.classList.toggle('active');
+}
+
 // Update cart count in navbar
 function updateCartCount() {
     const cartCount = document.querySelector('.cart-count');
